@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .animate-bubble1 {
+    animation: bubble 1.4s ease-in-out infinite;
+  }
+  .animate-bubble2 {
+    animation: bubble 1.4s ease-in-out infinite 0.2s;
+  }
+  .animate-bubble3 {
+    animation: bubble 1.4s ease-in-out infinite 0.4s;
+  }
+}
+
+@keyframes bubble {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-5px);
+    opacity: 0.5;
+  }
+}
